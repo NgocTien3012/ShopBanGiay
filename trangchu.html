@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="trangchu.css" />
+    <script src="trangchu.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="main-container">
+      <div class="container">
+        <div class="logo">
+          <img src="img/mlb.jpg" alt="" />
+        </div>
+        <div class="phandau">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">QUẦN ÁO</a>
+                <ul class="dropdown">
+                  <li><a href="#">Áo</a></li>
+                  <li><a href="#">Quần</a></li>
+                  <li><a href="#">Quần Kaki</a></li>
+                  <li><a href="#">Áo khoác</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">MŨ NÓN</a>
+                <ul class="dropdown">
+                  <li><a href="#">Nón lưỡi trai</a></li>
+                  <li><a href="#">Nón bucket</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="product.html">GIÀY DÉP</a>
+                <ul class="dropdown">
+                  <li><a href="#">Giày sneaker</a></li>
+                  <li><a href="#">Dép</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">TÚI VÍ</a>
+                <ul class="dropdown">
+                  <li><a href="#">Túi xách</a></li>
+                  <li><a href="#">Ví da</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">PHỤ KIỆN</a>
+                <ul class="dropdown">
+                  <li><a href="#">Nhẫn</a></li>
+                  <li><a href="#">Dây Chuyền</a></li>
+                  <li><a href="#">Vòng Tay</a></li>
+                  <li><a href="#">Bông Tai</a></li>
+                  <li><a href="#">Thắt lưng</a></li>
+                </ul>
+              </li>
+              <li><a href="#" style="color: red">GIẢM GIÁ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <i style="font-size: 24px" class="fa">&#xf002;</i>
+          <i style="font-size: 24px" class="fa">&#xf291;</i>
+          <a href="cart.html"
+            ><i style="font-size: 24px" class="fa">&#xf07a;</i>(<span id="count">0</span>)</a>
+          <a href="register.html"
+            ><i class="fa fa-plus-square-o" style="font-size: 30px"></i
+          ></a>
+          <a href="login.html"
+            ><i style="font-size: 24px" class="fa">&#xf2c0;</i></a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="picture">
+      <div class="slider">
+        <img id="anh" alt="" src="img/banner.jpg" />
+        <i class="slider-prev" onclick="prev()"><</i>
+        <i class="slider-next" onclick="prev()">></i>
+      </div>
+    </div>
+    <h1>Sản phẩm bán chạy</h1>
+    <div class="container1">
+      <div class="hot">
+        <div class="sanpham">
+          <img src="img/sp1.jpg" alt="" class="sp1" id="sp1" />
+          <p class="namesp">Giày MLB 1</p>
+          <span>4,500,000đ</span> <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+        <div class="sanpham">
+          <img src="img/sp2.jpg" alt="" class="sp2" id="sp2" />
+          <p class="namesp">Giày MLB 2</p>
+          <span>5,500,000đ</span> <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+        <div class="sanpham">
+          <img src="img/sp3.jpg" alt="" class="sp3" id="sp3" />
+          <p class="namesp">Giày MLB 3</p>
+          <span>7,000,000đ</span><br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+        <div class="sanpham">
+          <img src="img/sp4.jpg" alt="" class="sp4" id="sp4" />
+          <p class="namesp">Giày MLB 4</p>
+          <span class="price">1,250,000đ</span> <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+      </div>
+    
+    </div>
+    <h1 class="sale2">
+      Hàng sale<img src="img/sale2.gif" alt="" width="200px" class="sale1" />
+    </h1>
+    <div class="container2">
+      <div class="hot">
+        <div class="sanpham">
+          <img src="img/sp5.jpg" alt="" class="sp1" id="sp5" />
+          <p class="namesp">Giày MLB 5</p>
+          <span>1,500,000đ</span> <del>3,000,000đ</del><br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+        <div class="sanpham">
+          <img src="img/sp6.jpg" alt="" class="sp1" id="sp6" />
+          <p class="namesp">Giày MLB 6</p>
+          <span>1,500,000đ</span> <del>3,000,000đ</del><br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+        <div class="sanpham">
+          <img src="img/sp7.jpg" alt="" class="sp1" id="sp7" />
+          <p class="namesp">Giày MLB 7</p>
+          <span>1,500,000đ</span> <del>3,000,000đ</del><br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+        <div class="sanpham">
+          <img src="img/sp8.jpg" alt="" class="sp1" id="sp8" />
+          <p class="namesp">Giày MLB 8</p>
+          <span>1,500,000đ</span> <del>3,000,000đ</del><br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <a href=""><button>Xem chi tiết</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="video">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VwfzJsx9bfQ?si=GqMCvaZ1wLC8rHYv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="left">
+          <ul>
+            <li>Trợ giúp</li>
+            <li>Hệ Thống Cửa Hàng</li>
+            <li>Liên Hệ</li>
+            <li>Câu hỏi thường gặp</li>
+            <li>Chính sách bảo mật</li>
+            <li>Điều khoản sử dụng</li>
+            <li>Chính sách vận chuyển, giao hàng</li>
+            <li>Chính sách thanh toán</li>
+          </ul>
+        </div>
+        <div class="center">
+          <ul>
+            <li>Thanh Toán</li>
+            <li>Visa / Mastercard / JCB</li>
+            <li>ATM / Internet Banking</li>
+            <li>Ví điện tử</li>
+            <li>Quét mã QR</li>
+            <li>Mua trước trả sau</li>
+            <li>Ví điện tử</li>
+            <li>Thanh toán khi nhận hàng (COD)</li>
+          </ul>
+        </div>
+        <div class="center">
+          <ul>
+            <li>Giao hàng</li>
+            <li>Giao hàng tiêu chuẩn</li>
+            <li>Maison NOW</li>
+            <li>
+              <canvas id="myCanvas" width="200" height="200"></canvas>
+              <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+                function drawCheckMark() {
+                  ctx.beginPath();
+                  ctx.moveTo(60, 100); 
+                  ctx.lineTo(90, 130); 
+                  ctx.lineTo(140, 70); 
+                  ctx.strokeStyle = "aqua"; 
+                  ctx.lineWidth = 5; 
+                  ctx.stroke(); 
+                  ctx.closePath();
+                }
+                drawCheckMark();
+              </script>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8393540151665!2d106.6866961760125!3d10.746861559736352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0819e0e3d1%3A0xf89c045111fbf396!2zMTg5LTE5NyBELiBCw6EgVHLhuqFjLCBQaMaw4budbmcgMSwgUXXhuq1uIDgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1737298945597!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+        </div>
+      </div>
+      <p>
+        Bản quyền thuộc về MLB Korea được phân phối độc quyền tại Việt Nam bởi
+        CÔNG TY CỔ PHẦN MAISON RETAIL MANAGEMENT INTERNATIONAL
+      </p>
+      <p>
+        Địa chỉ: 189 - 197, Dương Bá Trạc, Phường 1, Quận 8, TP. Hồ Chí Minh |
+        MST: 0313175103
+      </p>
+      <p>Hotline: 1900 299268 | Email: customercare@maisonrmi.com</p>
+    </footer>
+  </body>
+</html>

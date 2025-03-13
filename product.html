@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="product.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="trangchu.html">
+            <img src="img/mlb.jpg" alt="" />
+          </a>
+        </div>
+        <div class="phandau">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">QUẦN ÁO</a>
+                <ul class="dropdown">
+                  <li><a href="#">Áo</a></li>
+                  <li><a href="#">Quần</a></li>
+                  <li><a href="#">Quần Kaki</a></li>
+                  <li><a href="#">Áo khoác</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">MŨ NÓN</a>
+                <ul class="dropdown">
+                  <li><a href="#">Nón lưỡi trai</a></li>
+                  <li><a href="#">Nón bucket</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">GIÀY DÉP</a>
+                <ul class="dropdown">
+                  <li><a href="#">Giày sneaker</a></li>
+                  <li><a href="#">Dép</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">TÚI VÍ</a>
+                <ul class="dropdown">
+                  <li><a href="#">Túi xách</a></li>
+                  <li><a href="#">Ví da</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">PHỤ KIỆN</a>
+                <ul class="dropdown">
+                  <li><a href="#">Nhẫn</a></li>
+                  <li><a href="#">Dây Chuyền</a></li>
+                  <li><a href="#">Vòng Tay</a></li>
+                  <li><a href="#">Bông Tai</a></li>
+                  <li><a href="#">Thắt lưng</a></li>
+                </ul>
+              </li>
+              <li><a href="#" style="color: red">GIẢM GIÁ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <i style="font-size: 24px" class="fa">&#xf002;</i>
+          <i style="font-size: 24px" class="fa">&#xf291;</i>
+          <a href="cart.html"
+            ><i style="font-size: 24px" class="fa">&#xf07a;</i>(<span id="count"
+              >0</span
+            >)</a
+          >
+          <a href="register.html"
+            ><i class="fa fa-plus-square-o" style="font-size: 30px"></i
+          ></a>
+          <a href="login.html"
+            ><i style="font-size: 24px" class="fa">&#xf2c0;</i></a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="container1">
+      <div class="product3">
+        <p class="nameDanhMuc">Danh Mục</p>
+        <input type="radio" name="Giay" value="Giày Nam" class="giay" />
+        <label>Giày Bigball Chunky</label><br />
+        <input type="radio" name="Giay" value="Giày Nữ" class="giay" />
+        <label>Giày Chunky Low & High </label><br />
+        <input type="radio" name="Giay" value="Giày Nữ" class="giay" />
+        <label>Giày Chunky Classic </label><br />
+        <input type="radio" name="Giay" value="Giày Nữ" class="giay" />
+        <label>Giày Chunky Jogger</label><br />
+        <div class="TableColor">
+          <p style="font-weight: bold" id="FontColors">MÀU SẮC</p>
+          <div class="ChooseColors">
+            <div class="Colors" style="background-color: #000000"></div>
+            <div class="Colors" style="background-color: #bfbfbf"></div>
+            <div class="Colors" style="background-color: #c89c5a"></div>
+            <div class="Colors" style="background-color: #40a4ff"></div>
+            <div class="Colors" style="background-color: #8cff73"></div>
+            <div class="Colors" style="background-color: #ff6edd"></div>
+            <div class="Colors" style="background-color: #ff7e74"></div>
+            <div class="Colors" style="background-color: #a50000"></div>
+          </div>
+        </div>
+        <div class="price">
+          <p class="TablePrice">Bảng Giá</p>
+          <input type="radio" name="Price" value="Giày Nam" class="SalePrice" />
+          <label style="color: black">0 - 1,000,000</label><br />
+          <input type="radio" name="Price" value="Giày Nữ" class="SalePrice" />
+          <label style="color: black">1,000,000 - 5,000,000 </label><br />
+          <input type="radio" name="Price" value="Giày Nữ" class="SalePrice" />
+          <label style="color: black">5,000,000 - 10,000,000 </label><br />
+          <input type="radio" name="Price" value="Giày Nữ" class="SalePrice" />
+          <label style="color: black">10,000,000 - 15,000,000</label><br />
+        </div>
+      </div>
+      <div class="product">
+        <div class="product1" id="productCatalog">
+          <div class="product2">
+            <script>
+              const productCatalog = [
+                {
+                  id: 1,
+                  name: "MLB 1",
+                  price: 1500000,
+                  image: "img/product1.jpg",
+                },
+                {
+                  id: 2,
+                  name: "MLB 2",
+                  price: 2500000,
+                  image: "img/product2.jpg",
+                },
+                {
+                  id: 3,
+                  name: "MLB 3",
+                  price: 1000000,
+                  image: "img/product3.jpg",
+                },
+                {
+                  id: 4,
+                  name: "MLB 4",
+                  price: 3900000,
+                  image: "img/product4.jpg",
+                },
+                {
+                  id: 5,
+                  name: "MLB 5",
+                  price: 3400000,
+                  image: "img/product5.jpg",
+                },
+                {
+                  id: 6,
+                  name: "MLB6",
+                  price: 2000000,
+                  image: "img/product6.jpg",
+                },
+
+                {
+                  id: 7,
+                  name: "MLB 7",
+                  price: 2000000,
+                  image: "img/product7.jpg",
+                },
+                {
+                  id: 8,
+                  name: "MLB 8",
+                  price: 4000000,
+                  image: "img/product8.jpg",
+                },
+                {
+                  id: 9,
+                  name: "MLB 9",
+                  price: 3400000,
+                  image: "img/product9.jpg",
+                },
+                {
+                  id: 10,
+                  name: "MLB6",
+                  price: 2000000,
+                  image: "img/product10.jpg",
+                },
+
+                {
+                  id: 11,
+                  name: "MLB 11",
+                  price: 2000000,
+                  image: "img/product11.jpg",
+                },
+                {
+                  id: 12,
+                  name: "MLB 12",
+                  price: 7000000,
+                  image: "img/product12.jpg",
+                },
+              ];
+
+              function displayProducts() {
+                const productContainer =
+                  document.getElementById("productCatalog");
+                productCatalog.forEach((product) => {
+                  const productElement = document.createElement("div");
+                  productElement.classList.add("sanpham");
+                  productElement.innerHTML = `
+                <a href="chitiet.html"><img src = " ${product.image}" alt = "${
+                    product.name
+                  }"></a>
+                <h2 class="namesp">${product.name}</h2>
+                <p class="price">Giá: ${product.price.toLocaleString()} VND</p>
+                <a href = "#" onclick="addtoCart(${
+                  product.id
+                })"> <button class="btn">Thêm Vào Giỏ Hàng</button></a>
+                
+                `;
+                  productContainer.appendChild(productElement);
+                });
+              }
+              function getCart() {
+                return JSON.parse(localStorage.getItem("cart")) || [];
+              }
+              function updateCart(cart) {
+                localStorage.setItem("cart", JSON.stringify(cart));
+                document.getElementById("count").innerHTML = cart.length;
+              }
+              function addtoCart(productID) {
+                const product = productCatalog.find(
+                  (item) => item.id === productID
+                );
+                if (!product) {
+                  return;
+                }
+                const cart = getCart();
+                const existingProduct = cart.find(
+                  (item) => item.id === productID
+                );
+                if (existingProduct) {
+                  existingProduct.quantity += 1;
+                } else {
+                  cart.push({ ...product, quantity: 1 });
+                }
+                alert(`Sản phẩm "${product.name}" đã được thêm vào giỏ hàng !`);
+                updateCart(cart);
+              }
+              document.addEventListener("DOMContentLoaded", displayProducts);
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="left">
+          <ul>
+            <li>Trợ giúp</li>
+            <li>Hệ Thống Cửa Hàng</li>
+            <li>Liên Hệ</li>
+            <li>Câu hỏi thường gặp</li>
+            <li>Chính sách bảo mật</li>
+            <li>Điều khoản sử dụng</li>
+            <li>Chính sách vận chuyển, giao hàng</li>
+            <li>Chính sách thanh toán</li>
+          </ul>
+        </div>
+        <div class="center">
+          <ul>
+            <li>Thanh Toán</li>
+            <li>Visa / Mastercard / JCB</li>
+            <li>ATM / Internet Banking</li>
+            <li>Ví điện tử</li>
+            <li>Quét mã QR</li>
+            <li>Mua trước trả sau</li>
+            <li>Ví điện tử</li>
+            <li>Thanh toán khi nhận hàng (COD)</li>
+          </ul>
+        </div>
+        <div class="center">
+          <ul>
+            <li>Giao hàng</li>
+            <li>Giao hàng tiêu chuẩn</li>
+            <li>Maison NOW</li>
+            <li>
+              <canvas id="myCanvas" width="200" height="200"></canvas>
+              <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+                function drawCheckMark() {
+                  ctx.beginPath();
+                  ctx.moveTo(60, 100);
+                  ctx.lineTo(90, 130);
+                  ctx.lineTo(140, 70);
+                  ctx.strokeStyle = "aqua";
+                  ctx.lineWidth = 5;
+                  ctx.stroke();
+                  ctx.closePath();
+                }
+                drawCheckMark();
+              </script>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8393540151665!2d106.6866961760125!3d10.746861559736352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0819e0e3d1%3A0xf89c045111fbf396!2zMTg5LTE5NyBELiBCw6EgVHLhuqFjLCBQaMaw4budbmcgMSwgUXXhuq1uIDgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1737298945597!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+        </div>
+      </div>
+      <p>
+        Bản quyền thuộc về MLB Korea được phân phối độc quyền tại Việt Nam bởi
+        CÔNG TY CỔ PHẦN MAISON RETAIL MANAGEMENT INTERNATIONAL
+      </p>
+      <p>
+        Địa chỉ: 189 - 197, Dương Bá Trạc, Phường 1, Quận 8, TP. Hồ Chí Minh |
+        MST: 0313175103
+      </p>
+      <p>Hotline: 1900 299268 | Email: customercare@maisonrmi.com</p>
+    </footer>
+  </body>
+</html>
