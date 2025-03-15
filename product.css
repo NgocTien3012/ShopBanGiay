@@ -112,7 +112,7 @@ nav ul li:hover .dropdown {
 }
 .product1 .sanpham {
   max-width: 30%;
-  margin: 20px;
+  /* margin: 20px; */
   margin-left: 23px ;
 }
 .namesp {
